@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.test.suite.TestSuite" time="33.676" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="com.test.suite.TestSuite" time="24.804" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib"/>
@@ -64,5 +64,5 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16|sim1.alphapoint.com|*.sim1.alphapoint.com|172.16.106.154|baseline.allianceglobalservices.com|*.baseline.allianceglobalservices.com"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="TestTaskOne" classname="com.test.scripts.TestScripts" time="33.676"/>
+  <testcase name="TestTaskOne" classname="com.test.scripts.TestScripts" time="24.804"/>
 </testsuite>

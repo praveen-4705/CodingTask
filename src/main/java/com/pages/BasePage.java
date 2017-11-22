@@ -110,11 +110,12 @@ public class BasePage {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", w);
 	}
-	
+
 	/**
 	 * Pause the thread
 	 * 
-	 * @param time	Waiting time
+	 * @param time
+	 *            Waiting time
 	 */
 	public void synch(long time) {
 
@@ -125,5 +126,18 @@ public class BasePage {
 			e.printStackTrace();
 		}
 
+	}
+
+	/**
+	 * Verify the message
+	 * 
+	 * @param by		Unique identifier of the element
+	 * @param expectedMessage validation text
+	 */
+	public void checkMessage(By by, String expectedMessage) {
+
+		String actualText = locateElement(by).getText().trim();
+
+		Assert.assertEquals(actualText, expectedMessage);
 	}
 }

@@ -11,6 +11,7 @@ public class ObjectOrientedProgrammingPage extends BasePage {
 	private By showBtn = By.xpath("//div[@aria-labelledby='Software_engineering']//a[text()='show']");
 	private By thirdPersonLink = By
 			.xpath("(//div[contains(text(),'Software')]/parent::th/following-sibling::td//li)[3]");
+	private By personName = By.xpath("//h1[@id='firstHeading']");
 	
 	/**
 	 * ObjectOrientedProgrammingPage constructor
@@ -46,9 +47,13 @@ public class ObjectOrientedProgrammingPage extends BasePage {
 
 		click(showBtn);
 
+		String name	= locateElement(thirdPersonLink).getText().trim();
+		
 		click(thirdPersonLink);
 		
 		synch(1000);
+		
+		checkMessage(personName, name);
 
 	}
 }
