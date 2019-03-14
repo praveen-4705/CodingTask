@@ -1,4 +1,4 @@
-- Framework - JUnit with Page Object Model
+- Framework - JUnit with Page Object Model 
 - Design Pattern - Singleton Design Pattern
 - Build Tool - Maven
 
